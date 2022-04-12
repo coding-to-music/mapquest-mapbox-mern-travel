@@ -16,7 +16,7 @@ var commentRoutes = require("./routes/comments"),
   destinationRoutes = require("./routes/destinations"),
   indexRoutes = require("./routes/index");
 
-var url = process.env.DATABASEURL || "mongodb://localhost/travel_destinations";
+var url = process.env.MONGODB_URI || "mongodb://localhost/travel_destinations";
 var port = process.env.PORT || 3000;
 mongoose.connect(url);
 mongoose

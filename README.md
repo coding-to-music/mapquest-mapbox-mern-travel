@@ -107,6 +107,12 @@ heroku create mapquest-mapbox-mern-travel
 ```java
 heroku config:set
 
+heroku config:set MONGODB_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/photo-review-flickr-mern?retryWrites=true&w=majority"
+
+heroku config:set GEOCODER_PROVIDER=""
+heroku config:set GEOCODER_API_KEY=""
+
+
 heroku config:set PUBLIC_URL="https://mapquest-mapbox-mern-travel.herokuapp.com"
 ```
 
